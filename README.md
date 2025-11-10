@@ -1,16 +1,10 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Thư viện,Mục đích,Dùng để làm gì trong Smart Doc Search,Ví dụ thực tế
+react-router-dom,Điều hướng trang (Routing),"Chuyển đổi giữa các trang: /login, /dashboard, /search, /admin","<Route path=""/search"" element={<SearchPage />} />"
+axios,Gọi API HTTP,"Gửi request đến backend: POST /api/documents/upload, GET /api/search","axios.post('/api/auth/login', { email, password })"
+lucide-react,"Icon hiện đại, nhẹ, đẹp","Thay thế FontAwesome, dùng icon: Search, Upload, User, Bell","<Search className=""w-5 h-5"" />"
+framer-motion,Animation mượt như phim,"Hiệu ứng: fade in, slide, hover scale, drag & drop",<motion.div animate={{ scale: 1.05 }}>
+react-hot-toast,Thông báo đẹp (Toast),"Hiển thị: ""Upload thành công!"", ""Lỗi mật khẩu"", ""Đang xử lý...""",toast.success('Tài liệu đã được tải lên!')
+react-dropzone,Drag & Drop file,Kéo thả file PDF/JPG vào vùng upload,<div {...getRootProps()}>Kéo file vào đây</div>
+react-pdf,Xem PDF trong trình duyệt,Hiển thị file PDF + highlight từ khóa tìm được,<Document file={url}><Page pageNumber={1} /></Document>
+@headlessui/react,UI không kiểu sẵn (unstyled),"Tạo dropdown, modal, tab đẹp + accessible mà vẫn tùy chỉnh",<Menu><Menu.Button>More</Menu.Button></Menu>
+@heroicons/react,"Icon đơn giản, chuẩn Tailwind","Icon nhỏ: X, Check, Arrow, dùng trong button, list","<X className=""w-4 h-4"" />"
